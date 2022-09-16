@@ -5,6 +5,7 @@ window.addEventListener('load', function(){
    const card4=document.getElementById("card-four");
    const card5=document.getElementById("card-five");
    const card6=document.getElementById("card-six");
+   const scoreboard=document.getElementById("score");
    let htmlmatch = 0;
    let score=0;
     
@@ -15,10 +16,8 @@ window.addEventListener('load', function(){
     htmlmatch=htmlmatch+1;
     if (htmlmatch==2){
         score=score+5;
+        scoreboard.innerHTML=`Score: ${score}`;
         setTimeout(() => { card1.className="card-gone"; card6.className="card-gone"; }, 1000);
-        
-        
-        
     }
 }
    card1.addEventListener("click",card1click)
@@ -28,6 +27,7 @@ window.addEventListener('load', function(){
     htmlmatch=htmlmatch+1;
     if (htmlmatch==2){
         score=score+5;
+        scoreboard.innerHTML=`Score: ${score}`;
         setTimeout(() => { card1.className="card-gone"; card6.className="card-gone"; }, 1000);
     }
 }
