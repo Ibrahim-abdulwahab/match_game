@@ -42,3 +42,6 @@ html {
     height: 100%;
     flex-grow: 1;
 }
+.card-gone{
+    display: none;
+}
