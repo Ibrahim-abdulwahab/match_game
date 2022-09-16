@@ -8,3 +8,16 @@ html {
     font-size: 10px;
     font-family:  'Poppins', sans-serif;
 }
+.main{
+    height: 100vh;
+    width:100vw;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-field{
+    height: 50%;
+    width: 50%;
+    background-color: red;
+}
