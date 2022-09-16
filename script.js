@@ -22,14 +22,15 @@ window.addEventListener('load', function(){
    const card1click = () =>{
     card1.className="card-html";
     htmlmatch=htmlmatch+1;
-    wrongmatch=wrongmatch+1
+    wrongmatch=wrongmatch+1;
     if (htmlmatch==2){
         correct(card1,card6)
     }
-    if (wrongmatch=2){
-        card1.className="card"
-        wrongmatch=1;
+    if (wrongmatch==2){
+        card1.className="wrong-card"
+        setTimeout(() => {card1.className="card"}, 1000);
         htmlmatch=0;
+        wrongmatch=1;
     }
 }
    card1.addEventListener("click",card1click)
@@ -37,8 +38,15 @@ window.addEventListener('load', function(){
    const card6click = () =>{
     card6.className="card-html";
     htmlmatch=htmlmatch+1;
+    wrongmatch=wrongmatch+1;
     if (htmlmatch==2){
         correct(card1,card6)
+    }
+    if (wrongmatch==2){
+        card6.className="wrong-card"
+        setTimeout(() => {card6.className="card"}, 1000);
+        htmlmatch=0;
+        wrongmatch=1;
     }
 }
    card6.addEventListener("click",card6click)
@@ -46,8 +54,15 @@ window.addEventListener('load', function(){
    const card2click = () =>{
     card2.className="card-css";
     cssmatch=cssmatch+1;
+    wrongmatch=wrongmatch+1;
     if (cssmatch==2){
         correct(card2,card4)
+    }
+    if (wrongmatch==2){
+        card2.className="wrong-card"
+        setTimeout(() => {card2.className="card"}, 1000);
+        cssmatch=0;
+        wrongmatch=1;
     }
 }
    card2.addEventListener("click",card2click)
@@ -55,8 +70,15 @@ window.addEventListener('load', function(){
    const card4click = () =>{
     card4.className="card-css";
     cssmatch=cssmatch+1;
+    wrongmatch=wrongmatch+1;
     if (cssmatch==2){
         correct(card2,card4)
+    }
+    if (wrongmatch==2){
+        card4.className="wrong-card"
+        setTimeout(() => {card4.className="card"}, 1000);
+        cssmatch=0;
+        wrongmatch=1;
     }
 }
    card4.addEventListener("click",card4click)
@@ -64,8 +86,15 @@ window.addEventListener('load', function(){
    const card3click = () =>{
     card3.className="card-js";
     jsmatch=jsmatch+1;
+    wrongmatch=wrongmatch+1;
     if (jsmatch==2){
         correct(card3,card5)
+    }
+    if (wrongmatch==2){
+        card3.className="wrong-card"
+        setTimeout(() => {card3.className="card"}, 1000);
+        jsmatch=0;
+        wrongmatch=1;
     }
 }
    card3.addEventListener("click",card3click)
@@ -73,8 +102,15 @@ window.addEventListener('load', function(){
    const card5click = () =>{
     card5.className="card-js";
     jsmatch=jsmatch+1;
+    wrongmatch=wrongmatch+1;
     if (jsmatch==2){
         correct(card3,card5)
+    }
+    if (wrongmatch==2){
+        card5.className="wrong-card"
+        setTimeout(() => {card5.className="card"}, 1000);
+        jsmatch=0;
+        wrongmatch=1;
     }
 }
    card5.addEventListener("click",card5click)

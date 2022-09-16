@@ -71,3 +71,9 @@ html {
     height: 100%;
     flex-grow: 1;
 }
+.wrong-card{
+    background-color: red;
+    border-style: solid;
+    height: 100%;
+    flex-grow: 1;
+}
