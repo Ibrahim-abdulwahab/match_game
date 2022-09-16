@@ -26,6 +26,12 @@ html {
 .row{
     background-color: blue;
     width: 100%;
-    
+    flex-grow: 1;
+    display: flex;
+}
+.card{
+    background-color: green;
+    border-style: solid;
+    height: 100%;
     flex-grow: 1;
 }
