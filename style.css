@@ -20,4 +20,12 @@ html {
     height: 50%;
     width: 50%;
     background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    background-color: blue;
+    width: 100%;
+    
+    flex-grow: 1;
 }
