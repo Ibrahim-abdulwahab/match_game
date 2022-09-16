@@ -6,7 +6,7 @@ window.addEventListener('load', function(){
    const card5=document.getElementById("card-five");
    const card6=document.getElementById("card-six");
 
-   const card1click = () =>{console.log("hello")}
+   const card1click = () =>{card1.className="card-html"}
    card1.addEventListener("click",card1click)
 
    
