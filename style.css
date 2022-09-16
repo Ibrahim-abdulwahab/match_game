@@ -46,7 +46,7 @@ html {
 }
 .card-html{
     background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png) ;
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     border-style: solid;
     height: 100%;
@@ -54,4 +54,20 @@ html {
 }
 .card-gone{
     display: none;
+}
+.card-css{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGmm0WIMoOiVp65m6qAh3YzL63ZIEYZ3gs4Q&usqp=CAU) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    height: 100%;
+    flex-grow: 1;
+}
+.card-js{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjHnOJWFx-pAYHap_gvOF3yVc_2fFKf35LA&usqp=CAU) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    height: 100%;
+    flex-grow: 1;
 }
