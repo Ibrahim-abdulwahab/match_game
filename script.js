@@ -7,13 +7,18 @@ window.addEventListener('load', function(){
    const card6=document.getElementById("card-six");
    let htmlmatch = 0;
    let score=0;
+    
+
+
    const card1click = () =>{
     card1.className="card-html";
     htmlmatch=htmlmatch+1;
     if (htmlmatch==2){
         score=score+5;
-        card1.className="card-gone";
-        card6.className="card-gone"
+        setTimeout(() => { card1.className="card-gone"; card6.className="card-gone"; }, 1000);
+        
+        
+        
     }
 }
    card1.addEventListener("click",card1click)
@@ -23,12 +28,11 @@ window.addEventListener('load', function(){
     htmlmatch=htmlmatch+1;
     if (htmlmatch==2){
         score=score+5;
-        card1.className="card-gone";
-        card6.className="card-gone"
+        setTimeout(() => { card1.className="card-gone"; card6.className="card-gone"; }, 1000);
     }
 }
    card6.addEventListener("click",card6click)
-
+   
 
    
 
